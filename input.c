@@ -12,7 +12,8 @@ int editorProcessKeypress(void) {
         case 27:            //ESC key
             return 0; //sig to quit
 
-        case CTRL_KEY('s'):
+        //case CTRL_KEY('o'): //changed to o char while working remotely via windows powershell
+		case KEY_F(2): //TODO: fix key press in order to save file while using windows powershell
             editorSave();
             break;
 
